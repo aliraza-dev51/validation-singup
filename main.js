@@ -1,17 +1,17 @@
 const form = document.getElementById("signupForm");
 
-// Error Animation Function
+
 function setError(inputId, errorId, message){
 
   const input = document.getElementById(inputId);
 
-  // Show Error Message
+
   document.getElementById(errorId).innerHTML = message;
 
-  // Add Animation Class
+
   input.classList.add("input-error");
 
-  // Remove Animation After 300ms
+
   setTimeout(() => {
     input.classList.remove("input-error");
   }, 300);
